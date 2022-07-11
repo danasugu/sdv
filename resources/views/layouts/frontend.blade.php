@@ -222,6 +222,21 @@
                                             {{ trans('cruds.timeEntry.title') }}
                                         </a>
                                     @endcan
+                                    @can('contact_management_access')
+                                        <a class="dropdown-item disabled" href="#">
+                                            {{ trans('cruds.contactManagement.title') }}
+                                        </a>
+                                    @endcan
+                                    @can('contact_company_access')
+                                        <a class="dropdown-item ml-3" href="{{ route('frontend.contact-companies.index') }}">
+                                            {{ trans('cruds.contactCompany.title') }}
+                                        </a>
+                                    @endcan
+                                    @can('contact_contact_access')
+                                        <a class="dropdown-item ml-3" href="{{ route('frontend.contact-contacts.index') }}">
+                                            {{ trans('cruds.contactContact.title') }}
+                                        </a>
+                                    @endcan
                                     @can('client_management_setting_access')
                                         <a class="dropdown-item disabled" href="#">
                                             {{ trans('cruds.clientManagementSetting.title') }}
@@ -282,36 +297,6 @@
                                             {{ trans('cruds.transaction.title') }}
                                         </a>
                                     @endcan
-                                    @can('contact_management_access')
-                                        <a class="dropdown-item disabled" href="#">
-                                            {{ trans('cruds.contactManagement.title') }}
-                                        </a>
-                                    @endcan
-                                    @can('contact_company_access')
-                                        <a class="dropdown-item ml-3" href="{{ route('frontend.contact-companies.index') }}">
-                                            {{ trans('cruds.contactCompany.title') }}
-                                        </a>
-                                    @endcan
-                                    @can('contact_contact_access')
-                                        <a class="dropdown-item ml-3" href="{{ route('frontend.contact-contacts.index') }}">
-                                            {{ trans('cruds.contactContact.title') }}
-                                        </a>
-                                    @endcan
-                                    @can('faq_management_access')
-                                        <a class="dropdown-item disabled" href="#">
-                                            {{ trans('cruds.faqManagement.title') }}
-                                        </a>
-                                    @endcan
-                                    @can('faq_category_access')
-                                        <a class="dropdown-item ml-3" href="{{ route('frontend.faq-categories.index') }}">
-                                            {{ trans('cruds.faqCategory.title') }}
-                                        </a>
-                                    @endcan
-                                    @can('faq_question_access')
-                                        <a class="dropdown-item ml-3" href="{{ route('frontend.faq-questions.index') }}">
-                                            {{ trans('cruds.faqQuestion.title') }}
-                                        </a>
-                                    @endcan
                                     @can('expense_management_access')
                                         <a class="dropdown-item disabled" href="#">
                                             {{ trans('cruds.expenseManagement.title') }}
@@ -335,6 +320,21 @@
                                     @can('income_access')
                                         <a class="dropdown-item ml-3" href="{{ route('frontend.incomes.index') }}">
                                             {{ trans('cruds.income.title') }}
+                                        </a>
+                                    @endcan
+                                    @can('faq_management_access')
+                                        <a class="dropdown-item disabled" href="#">
+                                            {{ trans('cruds.faqManagement.title') }}
+                                        </a>
+                                    @endcan
+                                    @can('faq_category_access')
+                                        <a class="dropdown-item ml-3" href="{{ route('frontend.faq-categories.index') }}">
+                                            {{ trans('cruds.faqCategory.title') }}
+                                        </a>
+                                    @endcan
+                                    @can('faq_question_access')
+                                        <a class="dropdown-item ml-3" href="{{ route('frontend.faq-questions.index') }}">
+                                            {{ trans('cruds.faqQuestion.title') }}
                                         </a>
                                     @endcan
 

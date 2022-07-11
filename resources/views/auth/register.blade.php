@@ -13,7 +13,9 @@
             <p class="login-box-msg">{{ trans('global.register') }}</p>
             <form method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
-
+                @if(request()->has('team'))
+                    <input type="hidden" name="team" id="team" value="{{ request()->query('team') }}">
+                @endif
                 <div>
                     {{ csrf_field() }}
                     <div class="form-group">
