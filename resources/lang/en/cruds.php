@@ -84,8 +84,8 @@ return [
         'title_singular' => 'Basic CRM',
     ],
     'crmStatus' => [
-        'title'          => 'Statuses',
-        'title_singular' => 'Status',
+        'title'          => 'Position',
+        'title_singular' => 'Position',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
@@ -214,8 +214,8 @@ return [
         ],
     ],
     'assetManagement' => [
-        'title'          => 'Asset management',
-        'title_singular' => 'Asset management',
+        'title'          => 'Documents management',
+        'title_singular' => 'Documents management',
     ],
     'assetCategory' => [
         'title'          => 'Categories',
@@ -266,8 +266,8 @@ return [
         ],
     ],
     'asset' => [
-        'title'          => 'Assets',
-        'title_singular' => 'Asset',
+        'title'          => 'Documents',
+        'title_singular' => 'Document',
         'fields'         => [
             'id'                   => 'ID',
             'id_helper'            => ' ',
